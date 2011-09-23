@@ -1,0 +1,11 @@
+h1= title
+p Listing data
+
+#container
+	- each item in items
+		.item
+			span.id #{item._id}
+			| 
+			a(href="/edit/#{item._id}") edit
+			p.content #{item.content}
+
